@@ -1,0 +1,69 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.image-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+#imagePreview {
+    object-fit: contain;
+}
+
+/* Netijäniň esaslandyrylan kartasy */
+.result-card {
+    border-left: 5px solid #007bff; /* Mawy çäk (Default) */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ikona üçin zerur */
+    transition: all 0.3s ease;
+}
+
+/* Kategoriýa ikonkasynyň stili */
+.category-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5em;
+    opacity: 0.8;
+}
+
+/* --- Kategoriýa Reňkleri (Dizaýn) --- */
+
+/* Haýwan üçin Stil */
+.result-card.category-Haýwan {
+    border-left-color: #ffc107; /* Sary */
+    background-color: #fff9e6;
+}
+/* Ösümlik üçin Stil */
+.result-card.category-Ösümlik {
+    border-left-color: #28a745; /* Ýaşyl */
+    background-color: #f0fff4;
+}
+/* Beýleki Obýektler üçin Stil */
+.result-card.category-Beýleki {
+    border-left-color: #6c757d; /* Goýy çal */
+    background-color: #f8f9fa;
+}
+
+/* Blokkote stili (Düşündiriş üçin) */
+.result-card blockquote {
+    font-size: 0.95em;
+    color: #495057;
+    border-left: 3px solid #dee2e6;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #343a40;
+}
